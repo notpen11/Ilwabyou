@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You So Many Times</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #ffe6e6;
+            color: #ff1a1a;
+        }
+        #content {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <h1>I Love You So Many Times!</h1>
+    <div id="content"></div>
+
+    <script>
+        const contentDiv = document.getElementById('content');
+        const loveText = "I love you ";
+        const repetitions = 5000; // Adjust this number for more or fewer repetitions
+
+        // Repeat "I love you" thousands of times and insert it into the div
+        contentDiv.innerText = loveText.repeat(repetitions);
+    </script>
+</body>
+</html>
